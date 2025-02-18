@@ -4,17 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
     <title>Find & Add</title>
     <style>
         * {
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Courier New', Courier, monospace;
+        html {
+            filter: invert(1);
         }
 
-        h1 {
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #fff;
+        }
+
+        h1, p {
             text-align: center;
         }
 
@@ -48,6 +54,7 @@
         }
 
         button {
+            font-family: 'Courier New', Courier, monospace;
             display: inline-block;
             background-color: #000;
             border: 1px solid #fff;
@@ -71,6 +78,9 @@
     <h1>
         Find & Add
     </h1>
+    <p>
+        A simple web app to find a pattern of numbers by regex and add value to them.
+    </p>
     <div class="container">
         <label>
             Input String
